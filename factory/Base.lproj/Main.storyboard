@@ -1,24 +1,240 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fDH-CA-beP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="RoZ-eY-5Bl">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <navigationController id="fDH-CA-beP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hv8-iz-OXC">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ENa-9d-Bya" kind="relationship" relationship="rootViewController" id="jcn-iM-Tcn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yzz-EJ-6o9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1454" y="-39"/>
+        </scene>
+        <!--首頁-->
+        <scene sceneID="fT5-ZD-OLC">
+            <objects>
+                <viewController id="ENa-9d-Bya" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IN4-Aa-UPA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="k0f-mq-Z6Z">
+                                <rect key="frame" x="25" y="94" width="325" height="439"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="iSM-zY-hwg">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="129.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJ0-XY-Qg7">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="129.5"/>
+                                                <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.33725490196078434" alpha="0.53000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <inset key="titleEdgeInsets" minX="-30" minY="70" maxX="25" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="45" minY="0.0" maxX="3" maxY="50"/>
+                                                <state key="normal" title="原物料攪拌" image="icons8-mixer.png"/>
+                                                <connections>
+                                                    <segue destination="tbB-RP-IzY" kind="show" id="p2x-oM-KHk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMi-bZ-XRd">
+                                                <rect key="frame" x="175" y="0.0" width="150" height="129.5"/>
+                                                <color key="backgroundColor" red="0.0" green="0.32941176470588235" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="titleEdgeInsets" minX="-30" minY="70" maxX="25" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="55" minY="0.0" maxX="30" maxY="50"/>
+                                                <state key="normal" title="半成品運輸" image="icons8-deployment.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="zSA-Vl-LI0" kind="show" id="WJz-Bp-nlG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="yzz-lL-Qz4">
+                                        <rect key="frame" x="0.0" y="154.5" width="325" height="130"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avN-ES-JbP">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="130"/>
+                                                <color key="backgroundColor" red="1" green="0.41176470588235292" blue="0.090196078431372548" alpha="0.47999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="titleEdgeInsets" minX="-30" minY="70" maxX="25" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="52" minY="0.0" maxX="0.0" maxY="50"/>
+                                                <state key="normal" title="成品加工" image="icons8-engine.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="JGr-Ux-jKX" kind="show" id="3ja-yk-LvD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDO-qc-ugX">
+                                                <rect key="frame" x="175" y="0.0" width="150" height="130"/>
+                                                <color key="backgroundColor" red="0.47843137254901957" green="0.10588235294117647" blue="0.47450980392156861" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="titleEdgeInsets" minX="-30" minY="70" maxX="25" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="55" minY="0.0" maxX="30" maxY="50"/>
+                                                <state key="normal" title="禮盒包裝" image="icons8-robot.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="XWH-hK-Cmn" kind="show" id="EFY-S3-cWa"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ivj-3N-mFG">
+                                        <rect key="frame" x="0.0" y="309.5" width="325" height="129.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTB-Dr-j2I">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="129.5"/>
+                                                <color key="backgroundColor" red="0.58039215686274503" green="0.066666666666666666" blue="0.0" alpha="0.68999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="titleEdgeInsets" minX="-30" minY="70" maxX="30" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="50" minY="0.0" maxX="30" maxY="50"/>
+                                                <state key="normal" title="機器檢測" image="check-mark (1).png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="nam-Ut-uh8" kind="show" id="sLf-te-2iH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2MH-gS-2SN">
+                                                <rect key="frame" x="175" y="0.0" width="150" height="129.5"/>
+                                                <color key="backgroundColor" red="0.47450980392156861" green="0.47450980392156861" blue="0.47450980392156861" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="titleEdgeInsets" minX="-30" minY="70" maxX="25" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="45" minY="0.0" maxX="0.0" maxY="40"/>
+                                                <state key="normal" title="關  於" image="information (1).png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NCUT IM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cgi-Fa-Mck">
+                                <rect key="frame" x="143" y="567" width="108" height="31"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PHz-mt-ZSM" firstAttribute="bottom" secondItem="k0f-mq-Z6Z" secondAttribute="bottom" constant="90" id="9Ee-8f-t5v"/>
+                            <constraint firstItem="PHz-mt-ZSM" firstAttribute="trailing" secondItem="k0f-mq-Z6Z" secondAttribute="trailing" constant="25" id="BPo-tn-d38"/>
+                            <constraint firstItem="Cgi-Fa-Mck" firstAttribute="leading" secondItem="PHz-mt-ZSM" secondAttribute="leading" constant="143" id="EbS-gl-1FA"/>
+                            <constraint firstItem="k0f-mq-Z6Z" firstAttribute="top" secondItem="PHz-mt-ZSM" secondAttribute="top" constant="30" id="EtT-wP-ko5"/>
+                            <constraint firstItem="k0f-mq-Z6Z" firstAttribute="leading" secondItem="PHz-mt-ZSM" secondAttribute="leading" constant="25" id="YNu-Al-yYz"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Cgi-Fa-Mck" secondAttribute="trailing" constant="20" symbolic="YES" id="bAD-lF-soI"/>
+                            <constraint firstItem="Cgi-Fa-Mck" firstAttribute="top" secondItem="k0f-mq-Z6Z" secondAttribute="bottom" constant="34" id="m5p-rh-d0v"/>
+                            <constraint firstItem="PHz-mt-ZSM" firstAttribute="bottom" secondItem="Cgi-Fa-Mck" secondAttribute="bottom" constant="25" id="wPq-Oe-7vP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PHz-mt-ZSM"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="首頁" id="Zv0-d2-qAL"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b9S-hf-k6Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-631.20000000000005" y="-39.130434782608695"/>
+        </scene>
+        <!--Conveyor Controller-->
+        <scene sceneID="wNr-sp-ac8">
+            <objects>
+                <viewController id="zSA-Vl-LI0" customClass="ConveyorController" customModule="factory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NRF-mz-arG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ZXL-zF-VbQ"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bqh-4k-Qxj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="244" y="-134"/>
+        </scene>
+        <!--Testing Controller-->
+        <scene sceneID="qPz-zL-9qy">
+            <objects>
+                <viewController id="nam-Ut-uh8" customClass="TestingController" customModule="factory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3G4-wz-WZv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ohu-et-mq6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T54-CS-q6G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1399" y="740"/>
+        </scene>
+        <!--Robot Controller-->
+        <scene sceneID="rlY-SF-vL2">
+            <objects>
+                <viewController id="XWH-hK-Cmn" customClass="RobotController" customModule="factory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GwB-5L-Xla">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lB7-qs-Upr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bpD-bQ-g09" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-580" y="740"/>
+        </scene>
+        <!--Process Controller-->
+        <scene sceneID="6Ln-kh-yeq">
+            <objects>
+                <viewController id="JGr-Ux-jKX" customClass="ProcessController" customModule="factory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dd8-yM-p2y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="WPD-BJ-5mz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FHI-Rn-gCn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="281" y="585"/>
+        </scene>
+        <!--Mixer Controller-->
+        <scene sceneID="Wou-6m-nw3">
+            <objects>
+                <viewController id="tbB-RP-IzY" customClass="MixerController" customModule="factory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2J3-YD-qsc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="kvm-Bs-26B"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HZX-T6-Sbn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166" y="-817"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="check-mark (1).png" width="64" height="64"/>
+        <image name="icons8-deployment.png" width="64" height="64"/>
+        <image name="icons8-engine.png" width="64" height="64"/>
+        <image name="icons8-mixer.png" width="64" height="64"/>
+        <image name="icons8-robot.png" width="64" height="64"/>
+        <image name="information (1).png" width="64" height="64"/>
+    </resources>
 </document>

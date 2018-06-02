@@ -12,6 +12,17 @@
 		1327752D20C1D5920050AD0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1327752B20C1D5920050AD0A /* Main.storyboard */; };
 		1327752F20C1D5940050AD0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1327752E20C1D5940050AD0A /* Assets.xcassets */; };
 		1327753220C1D5940050AD0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1327753020C1D5940050AD0A /* LaunchScreen.storyboard */; };
+		1327753C20C1DD8D0050AD0A /* MixerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327753B20C1DD8D0050AD0A /* MixerController.swift */; };
+		1327753F20C2982B0050AD0A /* icons8-mixer.png in Resources */ = {isa = PBXBuildFile; fileRef = 1327753E20C2982B0050AD0A /* icons8-mixer.png */; };
+		1327754120C29C6D0050AD0A /* icons8-deployment.png in Resources */ = {isa = PBXBuildFile; fileRef = 1327754020C29C6C0050AD0A /* icons8-deployment.png */; };
+		1327754320C29F360050AD0A /* icons8-engine.png in Resources */ = {isa = PBXBuildFile; fileRef = 1327754220C29F360050AD0A /* icons8-engine.png */; };
+		1327754520C2A0A80050AD0A /* icons8-robot.png in Resources */ = {isa = PBXBuildFile; fileRef = 1327754420C2A0A80050AD0A /* icons8-robot.png */; };
+		1327754720C2A3A40050AD0A /* check-mark (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 1327754620C2A3A40050AD0A /* check-mark (1).png */; };
+		1327754920C2A53E0050AD0A /* information (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 1327754820C2A53D0050AD0A /* information (1).png */; };
+		1327754B20C2A6AB0050AD0A /* ConveyorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327754A20C2A6AB0050AD0A /* ConveyorController.swift */; };
+		1327754D20C2A7600050AD0A /* ProcessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327754C20C2A7600050AD0A /* ProcessController.swift */; };
+		1327754F20C2A87B0050AD0A /* TestingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327754E20C2A87B0050AD0A /* TestingController.swift */; };
+		1327755120C2A97D0050AD0A /* RobotController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327755020C2A97D0050AD0A /* RobotController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +33,17 @@
 		1327752E20C1D5940050AD0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1327753120C1D5940050AD0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1327753320C1D5940050AD0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1327753B20C1DD8D0050AD0A /* MixerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixerController.swift; sourceTree = "<group>"; };
+		1327753E20C2982B0050AD0A /* icons8-mixer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-mixer.png"; sourceTree = "<group>"; };
+		1327754020C29C6C0050AD0A /* icons8-deployment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-deployment.png"; sourceTree = "<group>"; };
+		1327754220C29F360050AD0A /* icons8-engine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-engine.png"; sourceTree = "<group>"; };
+		1327754420C2A0A80050AD0A /* icons8-robot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-robot.png"; sourceTree = "<group>"; };
+		1327754620C2A3A40050AD0A /* check-mark (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-mark (1).png"; sourceTree = "<group>"; };
+		1327754820C2A53D0050AD0A /* information (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "information (1).png"; sourceTree = "<group>"; };
+		1327754A20C2A6AB0050AD0A /* ConveyorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConveyorController.swift; sourceTree = "<group>"; };
+		1327754C20C2A7600050AD0A /* ProcessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessController.swift; sourceTree = "<group>"; };
+		1327754E20C2A87B0050AD0A /* TestingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingController.swift; sourceTree = "<group>"; };
+		1327755020C2A97D0050AD0A /* RobotController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +76,33 @@
 		1327752620C1D5920050AD0A /* factory */ = {
 			isa = PBXGroup;
 			children = (
+				1327753D20C241280050AD0A /* Home_img */,
 				1327752720C1D5920050AD0A /* AppDelegate.swift */,
 				1327752920C1D5920050AD0A /* ViewController.swift */,
 				1327752B20C1D5920050AD0A /* Main.storyboard */,
 				1327752E20C1D5940050AD0A /* Assets.xcassets */,
 				1327753020C1D5940050AD0A /* LaunchScreen.storyboard */,
 				1327753320C1D5940050AD0A /* Info.plist */,
+				1327753B20C1DD8D0050AD0A /* MixerController.swift */,
+				1327754A20C2A6AB0050AD0A /* ConveyorController.swift */,
+				1327754C20C2A7600050AD0A /* ProcessController.swift */,
+				1327754E20C2A87B0050AD0A /* TestingController.swift */,
+				1327755020C2A97D0050AD0A /* RobotController.swift */,
 			);
 			path = factory;
+			sourceTree = "<group>";
+		};
+		1327753D20C241280050AD0A /* Home_img */ = {
+			isa = PBXGroup;
+			children = (
+				1327754820C2A53D0050AD0A /* information (1).png */,
+				1327754620C2A3A40050AD0A /* check-mark (1).png */,
+				1327754420C2A0A80050AD0A /* icons8-robot.png */,
+				1327754220C29F360050AD0A /* icons8-engine.png */,
+				1327754020C29C6C0050AD0A /* icons8-deployment.png */,
+				1327753E20C2982B0050AD0A /* icons8-mixer.png */,
+			);
+			path = Home_img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +163,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1327754120C29C6D0050AD0A /* icons8-deployment.png in Resources */,
 				1327753220C1D5940050AD0A /* LaunchScreen.storyboard in Resources */,
+				1327754920C2A53E0050AD0A /* information (1).png in Resources */,
+				1327753F20C2982B0050AD0A /* icons8-mixer.png in Resources */,
+				1327754520C2A0A80050AD0A /* icons8-robot.png in Resources */,
 				1327752F20C1D5940050AD0A /* Assets.xcassets in Resources */,
+				1327754720C2A3A40050AD0A /* check-mark (1).png in Resources */,
 				1327752D20C1D5920050AD0A /* Main.storyboard in Resources */,
+				1327754320C29F360050AD0A /* icons8-engine.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1327754B20C2A6AB0050AD0A /* ConveyorController.swift in Sources */,
+				1327754D20C2A7600050AD0A /* ProcessController.swift in Sources */,
+				1327754F20C2A87B0050AD0A /* TestingController.swift in Sources */,
 				1327752A20C1D5920050AD0A /* ViewController.swift in Sources */,
 				1327752820C1D5920050AD0A /* AppDelegate.swift in Sources */,
+				1327755120C2A97D0050AD0A /* RobotController.swift in Sources */,
+				1327753C20C1DD8D0050AD0A /* MixerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
