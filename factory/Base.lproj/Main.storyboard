@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="MWindyHK-Bold.otf">
+            <string>MWindyHK-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="RoZ-eY-5Bl">
@@ -27,7 +32,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yzz-EJ-6o9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1454" y="-39"/>
+            <point key="canvasLocation" x="-1806" y="-42"/>
         </scene>
         <!--首頁-->
         <scene sceneID="fT5-ZD-OLC">
@@ -120,6 +125,9 @@
                                                 <state key="normal" title="關  於" image="information (1).png">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="Lps-8c-kIK" kind="show" id="hjq-cj-sZj"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -151,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9S-hf-k6Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-631.20000000000005" y="-39.130434782608695"/>
+            <point key="canvasLocation" x="-958" y="-41"/>
         </scene>
         <!--Conveyor Controller-->
         <scene sceneID="wNr-sp-ac8">
@@ -160,13 +168,117 @@
                     <view key="view" contentMode="scaleToFill" id="NRF-mz-arG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="S__6070346.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="m3A-2c-0dA">
+                                <rect key="frame" x="0.0" y="64" width="375" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="QYS-Sp-vzA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="輸送帶控制" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Zp-L8-Vu4">
+                                <rect key="frame" x="100" y="247" width="175" height="36"/>
+                                <fontDescription key="fontDescription" name="MWindyHK-Bold" family="MWindyHK" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="負責運輸半成品                （油酥、油皮、內餡）" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXE-ev-ldd">
+                                <rect key="frame" x="32" y="303" width="310" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="H0v-l8-f4X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MWindyHK-Bold" family="MWindyHK" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.3294117647" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dcG-Pi-Dj6">
+                                <rect key="frame" x="20" y="375" width="335" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8wy-ku-JCr">
+                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="128"/>
+                                        <state key="normal" image="switch (3).png"/>
+                                        <connections>
+                                            <action selector="run_conveyor:" destination="zSA-Vl-LI0" eventType="touchUpInside" id="hGq-Rh-isg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDF-5S-Iag">
+                                        <rect key="frame" x="167.5" y="0.0" width="167.5" height="128"/>
+                                        <state key="normal" image="stop (6).png"/>
+                                        <connections>
+                                            <action selector="stop_conveyor:" destination="zSA-Vl-LI0" eventType="touchUpInside" id="RQl-e4-w4h"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <webView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R6g-XD-tOe">
+                                <rect key="frame" x="0.0" y="247" width="43" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <webView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pdw-oB-xi3">
+                                <rect key="frame" x="330" y="251" width="29" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="緊急停止" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZ3-cY-PLZ">
+                                <rect key="frame" x="232" y="511" width="109.5" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="開始運送" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfX-Aq-Sim">
+                                <rect key="frame" x="60" y="511" width="105.5" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZXL-zF-VbQ" firstAttribute="trailing" secondItem="dcG-Pi-Dj6" secondAttribute="trailing" constant="20" id="6dv-HU-eAx"/>
+                            <constraint firstItem="hfX-Aq-Sim" firstAttribute="top" secondItem="dcG-Pi-Dj6" secondAttribute="bottom" constant="8" id="6jV-LA-jST"/>
+                            <constraint firstItem="hfX-Aq-Sim" firstAttribute="leading" secondItem="ZXL-zF-VbQ" secondAttribute="leading" constant="60" id="9LC-kS-UbY"/>
+                            <constraint firstItem="ZXL-zF-VbQ" firstAttribute="trailing" secondItem="rXE-ev-ldd" secondAttribute="trailing" constant="33" id="C3U-ov-Nhu"/>
+                            <constraint firstItem="m3A-2c-0dA" firstAttribute="leading" secondItem="ZXL-zF-VbQ" secondAttribute="leading" id="SRo-l2-AZf"/>
+                            <constraint firstItem="m3A-2c-0dA" firstAttribute="top" secondItem="ZXL-zF-VbQ" secondAttribute="top" id="XpH-V2-CG3"/>
+                            <constraint firstItem="kZ3-cY-PLZ" firstAttribute="top" secondItem="dcG-Pi-Dj6" secondAttribute="bottom" constant="8" id="YsB-9g-NOp"/>
+                            <constraint firstItem="dcG-Pi-Dj6" firstAttribute="leading" secondItem="ZXL-zF-VbQ" secondAttribute="leading" constant="20" id="a2p-Mn-ghG"/>
+                            <constraint firstItem="6Zp-L8-Vu4" firstAttribute="centerY" secondItem="NRF-mz-arG" secondAttribute="centerY" constant="-68.5" id="cIu-1O-4Lc"/>
+                            <constraint firstItem="6Zp-L8-Vu4" firstAttribute="centerX" secondItem="NRF-mz-arG" secondAttribute="centerX" id="gHH-Nl-CBm"/>
+                            <constraint firstItem="kZ3-cY-PLZ" firstAttribute="leading" secondItem="hfX-Aq-Sim" secondAttribute="trailing" constant="66.5" id="jZi-QA-2ww"/>
+                            <constraint firstItem="ZXL-zF-VbQ" firstAttribute="bottom" secondItem="dcG-Pi-Dj6" secondAttribute="bottom" constant="120" id="jqk-qd-x6O"/>
+                            <constraint firstItem="kZ3-cY-PLZ" firstAttribute="leading" secondItem="hfX-Aq-Sim" secondAttribute="trailing" constant="66.5" id="pQP-5D-I9p"/>
+                            <constraint firstItem="m3A-2c-0dA" firstAttribute="trailing" secondItem="ZXL-zF-VbQ" secondAttribute="trailing" id="reb-ca-X8t"/>
+                            <constraint firstItem="rXE-ev-ldd" firstAttribute="leading" secondItem="ZXL-zF-VbQ" secondAttribute="leading" constant="32" id="ufu-Nm-fu4"/>
+                            <constraint firstItem="ZXL-zF-VbQ" firstAttribute="bottom" secondItem="hfX-Aq-Sim" secondAttribute="bottom" constant="50" id="vCD-G8-2d8"/>
+                            <constraint firstItem="ZXL-zF-VbQ" firstAttribute="bottom" secondItem="kZ3-cY-PLZ" secondAttribute="bottom" constant="49" id="wVb-qr-39I"/>
+                            <constraint firstItem="rXE-ev-ldd" firstAttribute="top" secondItem="6Zp-L8-Vu4" secondAttribute="bottom" constant="20" id="xsT-QY-AL6"/>
+                            <constraint firstItem="ZXL-zF-VbQ" firstAttribute="trailing" secondItem="kZ3-cY-PLZ" secondAttribute="trailing" constant="33.5" id="ypd-w3-gPZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ZXL-zF-VbQ"/>
                     </view>
+                    <connections>
+                        <outlet property="web1" destination="R6g-XD-tOe" id="3tK-Kj-Dfb"/>
+                        <outlet property="web2" destination="Pdw-oB-xi3" id="io0-Qe-SAj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bqh-4k-Qxj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="244" y="-134"/>
+            <point key="canvasLocation" x="390" y="-1155"/>
+        </scene>
+        <!--About Controller-->
+        <scene sceneID="9qF-ED-sb4">
+            <objects>
+                <viewController id="Lps-8c-kIK" customClass="AboutController" customModule="factory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OXg-Ik-dfM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="bKI-Cd-VY0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pb4-0U-psq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-385" y="1104"/>
         </scene>
         <!--Testing Controller-->
         <scene sceneID="qPz-zL-9qy">
@@ -175,13 +287,13 @@
                     <view key="view" contentMode="scaleToFill" id="3G4-wz-WZv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Ohu-et-mq6"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T54-CS-q6G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1399" y="740"/>
+            <point key="canvasLocation" x="390" y="797"/>
         </scene>
         <!--Robot Controller-->
         <scene sceneID="rlY-SF-vL2">
@@ -190,13 +302,13 @@
                     <view key="view" contentMode="scaleToFill" id="GwB-5L-Xla">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="lB7-qs-Upr"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpD-bQ-g09" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-580" y="740"/>
+            <point key="canvasLocation" x="1193" y="162"/>
         </scene>
         <!--Process Controller-->
         <scene sceneID="6Ln-kh-yeq">
@@ -205,13 +317,76 @@
                     <view key="view" contentMode="scaleToFill" id="Dd8-yM-p2y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="machine.png" translatesAutoresizingMaskIntoConstraints="NO" id="7J2-Ki-TBI">
+                                <rect key="frame" x="0.0" y="64" width="375" height="231"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="231" id="SLy-Sm-11x"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="蛋黃酥成型機" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6T-kK-scK">
+                                <rect key="frame" x="82" y="315" width="210" height="36"/>
+                                <fontDescription key="fontDescription" name="MWindyHK-Bold" family="MWindyHK" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="將半成品製做成蛋黃酥  " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zov-ty-B00">
+                                <rect key="frame" x="50" y="391" width="275" height="27"/>
+                                <fontDescription key="fontDescription" name="MWindyHK-Bold" family="MWindyHK" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.3294117647" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="h2K-lN-916">
+                                <rect key="frame" x="20" y="410" width="335" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIc-Ql-6Hj">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="128"/>
+                                        <state key="normal" image="button.png"/>
+                                        <connections>
+                                            <action selector="run_process:" destination="JGr-Ux-jKX" eventType="touchUpInside" id="Xgl-am-xBR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="開始加工" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmz-aS-jVc">
+                                <rect key="frame" x="118" y="553" width="138" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YJc-o5-Apj">
+                                <rect key="frame" x="16" y="315" width="36" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7J2-Ki-TBI" firstAttribute="trailing" secondItem="WPD-BJ-5mz" secondAttribute="trailing" id="0EG-C3-y6l"/>
+                            <constraint firstItem="WPD-BJ-5mz" firstAttribute="bottom" secondItem="h2K-lN-916" secondAttribute="bottom" constant="85" id="IGw-Nc-NA9"/>
+                            <constraint firstItem="zov-ty-B00" firstAttribute="top" secondItem="E6T-kK-scK" secondAttribute="bottom" constant="40" id="JeH-5J-vhx"/>
+                            <constraint firstItem="WPD-BJ-5mz" firstAttribute="trailing" secondItem="Gmz-aS-jVc" secondAttribute="trailing" constant="119" id="Zie-GX-p5C"/>
+                            <constraint firstItem="Gmz-aS-jVc" firstAttribute="top" secondItem="h2K-lN-916" secondAttribute="bottom" constant="15" id="cQD-kv-oVe"/>
+                            <constraint firstItem="WPD-BJ-5mz" firstAttribute="bottom" secondItem="Gmz-aS-jVc" secondAttribute="bottom" constant="25" id="cet-BB-3zy"/>
+                            <constraint firstItem="WPD-BJ-5mz" firstAttribute="trailing" secondItem="h2K-lN-916" secondAttribute="trailing" constant="20" id="drt-jY-xuJ"/>
+                            <constraint firstItem="h2K-lN-916" firstAttribute="leading" secondItem="WPD-BJ-5mz" secondAttribute="leading" constant="20" id="jPr-Gz-gab"/>
+                            <constraint firstItem="Gmz-aS-jVc" firstAttribute="leading" secondItem="WPD-BJ-5mz" secondAttribute="leading" constant="118" id="ojO-17-Hg8"/>
+                            <constraint firstItem="7J2-Ki-TBI" firstAttribute="leading" secondItem="WPD-BJ-5mz" secondAttribute="leading" id="rEx-A1-oho"/>
+                            <constraint firstItem="WPD-BJ-5mz" firstAttribute="trailing" secondItem="zov-ty-B00" secondAttribute="trailing" constant="50" id="ssa-e1-kMQ"/>
+                            <constraint firstItem="7J2-Ki-TBI" firstAttribute="top" secondItem="WPD-BJ-5mz" secondAttribute="top" id="w1K-dF-qY4"/>
+                            <constraint firstItem="E6T-kK-scK" firstAttribute="centerY" secondItem="Dd8-yM-p2y" secondAttribute="centerY" id="y7A-hA-h6K"/>
+                            <constraint firstItem="zov-ty-B00" firstAttribute="leading" secondItem="WPD-BJ-5mz" secondAttribute="leading" constant="50" id="yIR-Yh-D79"/>
+                            <constraint firstItem="E6T-kK-scK" firstAttribute="centerX" secondItem="Dd8-yM-p2y" secondAttribute="centerX" id="zvF-uZ-taQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WPD-BJ-5mz"/>
                     </view>
+                    <connections>
+                        <outlet property="web" destination="YJc-o5-Apj" id="1xn-pI-bCm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FHI-Rn-gCn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="281" y="585"/>
+            <point key="canvasLocation" x="1192.8" y="-569.86506746626696"/>
         </scene>
         <!--Mixer Controller-->
         <scene sceneID="Wou-6m-nw3">
@@ -220,21 +395,116 @@
                     <view key="view" contentMode="scaleToFill" id="2J3-YD-qsc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mix.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="s0H-Od-c4n">
+                                <rect key="frame" x="0.0" y="60" width="375" height="265"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="265" id="bV0-Xp-7ks"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="攪拌機控制" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h25-pu-mfh">
+                                <rect key="frame" x="100" y="316" width="175" height="36"/>
+                                <fontDescription key="fontDescription" name="MWindyHK-Bold" family="MWindyHK" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="3Bt-p2-aiO">
+                                <rect key="frame" x="20" y="454" width="335" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZX-xI-kdu">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="128"/>
+                                        <state key="normal" image="switch (3).png"/>
+                                        <connections>
+                                            <action selector="run_mix:" destination="tbB-RP-IzY" eventType="touchUpInside" id="qPf-cs-F6c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9L-aO-s9v">
+                                        <rect key="frame" x="175" y="0.0" width="160" height="128"/>
+                                        <state key="normal" image="stop (6).png"/>
+                                        <connections>
+                                            <action selector="stop_mix:" destination="tbB-RP-IzY" eventType="touchUpInside" id="dzZ-GH-Vl2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="負責攪拌原物料                    請確保原物料準備就緒" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcY-mv-RFp">
+                                <rect key="frame" x="33" y="360" width="308" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="fYj-Ss-6YI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MWindyHK-Bold" family="MWindyHK" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.32941176470588235" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tKV-fX-mpu">
+                                <rect key="frame" x="16" y="333" width="29" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <webView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XRu-5Y-D44">
+                                <rect key="frame" x="339" y="333" width="36" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="開始攪拌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Cm-40-ybE">
+                                <rect key="frame" x="60" y="589" width="105.5" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="緊急停止" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZj-xB-rxw">
+                                <rect key="frame" x="250" y="588" width="105.5" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7Cm-40-ybE" firstAttribute="leading" secondItem="kvm-Bs-26B" secondAttribute="leading" constant="60" id="4tO-kC-STm"/>
+                            <constraint firstItem="3Bt-p2-aiO" firstAttribute="leading" secondItem="kvm-Bs-26B" secondAttribute="leading" constant="20" id="67K-OF-tec"/>
+                            <constraint firstItem="dcY-mv-RFp" firstAttribute="leading" secondItem="kvm-Bs-26B" secondAttribute="leading" constant="33" id="6Yf-Lb-0hO"/>
+                            <constraint firstItem="h25-pu-mfh" firstAttribute="centerY" secondItem="2J3-YD-qsc" secondAttribute="centerY" id="KrV-2d-jrn"/>
+                            <constraint firstItem="iZj-xB-rxw" firstAttribute="top" secondItem="3Bt-p2-aiO" secondAttribute="bottom" constant="6" id="L3o-09-CC9"/>
+                            <constraint firstItem="iZj-xB-rxw" firstAttribute="leading" secondItem="7Cm-40-ybE" secondAttribute="trailing" constant="84.5" id="MNw-PW-Fpc"/>
+                            <constraint firstAttribute="trailing" secondItem="3Bt-p2-aiO" secondAttribute="trailing" constant="20" id="Nrz-Iw-beX"/>
+                            <constraint firstItem="h25-pu-mfh" firstAttribute="centerX" secondItem="2J3-YD-qsc" secondAttribute="centerX" id="NwP-lT-mpd"/>
+                            <constraint firstItem="kvm-Bs-26B" firstAttribute="trailing" secondItem="dcY-mv-RFp" secondAttribute="trailing" constant="34" id="OtV-HK-vT1"/>
+                            <constraint firstAttribute="bottom" secondItem="iZj-xB-rxw" secondAttribute="bottom" constant="32" id="P8B-Gp-hEh"/>
+                            <constraint firstItem="s0H-Od-c4n" firstAttribute="leading" secondItem="kvm-Bs-26B" secondAttribute="leading" id="T3e-nE-bGM"/>
+                            <constraint firstAttribute="bottom" secondItem="7Cm-40-ybE" secondAttribute="bottom" constant="31" id="VoH-Fv-Wxw"/>
+                            <constraint firstItem="iZj-xB-rxw" firstAttribute="leading" secondItem="7Cm-40-ybE" secondAttribute="trailing" constant="84.5" id="ZnX-Cc-e6K"/>
+                            <constraint firstItem="s0H-Od-c4n" firstAttribute="top" secondItem="2J3-YD-qsc" secondAttribute="top" constant="60" id="aDn-VQ-6Qm"/>
+                            <constraint firstItem="s0H-Od-c4n" firstAttribute="trailing" secondItem="kvm-Bs-26B" secondAttribute="trailing" id="d13-r4-Nqu"/>
+                            <constraint firstItem="7Cm-40-ybE" firstAttribute="top" secondItem="3Bt-p2-aiO" secondAttribute="bottom" constant="7" id="dXb-n5-zH6"/>
+                            <constraint firstAttribute="bottom" secondItem="3Bt-p2-aiO" secondAttribute="bottom" constant="85" id="l3w-PX-cxv"/>
+                            <constraint firstItem="dcY-mv-RFp" firstAttribute="top" secondItem="h25-pu-mfh" secondAttribute="bottom" constant="8" id="sVH-UV-fmb"/>
+                            <constraint firstItem="kvm-Bs-26B" firstAttribute="trailing" secondItem="iZj-xB-rxw" secondAttribute="trailing" constant="19.5" id="yjK-dY-GbP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kvm-Bs-26B"/>
                     </view>
+                    <connections>
+                        <outlet property="web1" destination="tKV-fX-mpu" id="z8M-an-gQd"/>
+                        <outlet property="web2" destination="XRu-5Y-D44" id="OyC-Xx-YR7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HZX-T6-Sbn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="166" y="-817"/>
+            <point key="canvasLocation" x="-385" y="-1358"/>
         </scene>
     </scenes>
     <resources>
+        <image name="S__6070346.jpeg" width="934" height="243"/>
+        <image name="button.png" width="128" height="128"/>
         <image name="check-mark (1).png" width="64" height="64"/>
         <image name="icons8-deployment.png" width="64" height="64"/>
         <image name="icons8-engine.png" width="64" height="64"/>
         <image name="icons8-mixer.png" width="64" height="64"/>
         <image name="icons8-robot.png" width="64" height="64"/>
         <image name="information (1).png" width="64" height="64"/>
+        <image name="machine.png" width="3262" height="2150"/>
+        <image name="mix.jpg" width="748" height="516"/>
+        <image name="stop (6).png" width="128" height="128"/>
+        <image name="switch (3).png" width="128" height="128"/>
     </resources>
 </document>

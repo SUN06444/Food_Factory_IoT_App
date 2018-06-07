@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13031D1120C2EA7F0018AE84 /* mix.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13031D1020C2EA7F0018AE84 /* mix.jpg */; };
+		13031D1520C2ED660018AE84 /* MWindyHK-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13031D1420C2ED650018AE84 /* MWindyHK-Bold.otf */; };
+		13031D1920C2F0980018AE84 /* stop (6).png in Resources */ = {isa = PBXBuildFile; fileRef = 13031D1820C2F0970018AE84 /* stop (6).png */; };
+		13031D1F20C2FCEB0018AE84 /* switch (3).png in Resources */ = {isa = PBXBuildFile; fileRef = 13031D1E20C2FCEB0018AE84 /* switch (3).png */; };
+		13031D2120C2FE040018AE84 /* S__6070346.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 13031D2020C2FE030018AE84 /* S__6070346.jpeg */; };
+		1310C4FB20C38C8200169E70 /* machine.png in Resources */ = {isa = PBXBuildFile; fileRef = 1310C4FA20C38C8100169E70 /* machine.png */; };
+		131661E520C579020057C7D5 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 131661E420C579010057C7D5 /* button.png */; };
+		131661E720C57D950057C7D5 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131661E620C57D950057C7D5 /* AboutController.swift */; };
 		1327752820C1D5920050AD0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327752720C1D5920050AD0A /* AppDelegate.swift */; };
 		1327752A20C1D5920050AD0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327752920C1D5920050AD0A /* ViewController.swift */; };
 		1327752D20C1D5920050AD0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1327752B20C1D5920050AD0A /* Main.storyboard */; };
@@ -26,6 +34,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13031D1020C2EA7F0018AE84 /* mix.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mix.jpg; sourceTree = "<group>"; };
+		13031D1420C2ED650018AE84 /* MWindyHK-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MWindyHK-Bold.otf"; sourceTree = "<group>"; };
+		13031D1820C2F0970018AE84 /* stop (6).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop (6).png"; sourceTree = "<group>"; };
+		13031D1E20C2FCEB0018AE84 /* switch (3).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch (3).png"; sourceTree = "<group>"; };
+		13031D2020C2FE030018AE84 /* S__6070346.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = S__6070346.jpeg; sourceTree = "<group>"; };
+		1310C4FA20C38C8100169E70 /* machine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = machine.png; sourceTree = "<group>"; };
+		131661E420C579010057C7D5 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		131661E620C57D950057C7D5 /* AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
 		1327752420C1D5920050AD0A /* factory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = factory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1327752720C1D5920050AD0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1327752920C1D5920050AD0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +73,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13031D0F20C2EA600018AE84 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				131661E420C579010057C7D5 /* button.png */,
+				1310C4FA20C38C8100169E70 /* machine.png */,
+				13031D2020C2FE030018AE84 /* S__6070346.jpeg */,
+				13031D1E20C2FCEB0018AE84 /* switch (3).png */,
+				13031D1820C2F0970018AE84 /* stop (6).png */,
+				13031D1020C2EA7F0018AE84 /* mix.jpg */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		13031D1320C2ED350018AE84 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				13031D1420C2ED650018AE84 /* MWindyHK-Bold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		1327751B20C1D5920050AD0A = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +113,8 @@
 		1327752620C1D5920050AD0A /* factory */ = {
 			isa = PBXGroup;
 			children = (
+				13031D1320C2ED350018AE84 /* Fonts */,
+				13031D0F20C2EA600018AE84 /* image */,
 				1327753D20C241280050AD0A /* Home_img */,
 				1327752720C1D5920050AD0A /* AppDelegate.swift */,
 				1327752920C1D5920050AD0A /* ViewController.swift */,
@@ -88,6 +127,7 @@
 				1327754C20C2A7600050AD0A /* ProcessController.swift */,
 				1327754E20C2A87B0050AD0A /* TestingController.swift */,
 				1327755020C2A97D0050AD0A /* RobotController.swift */,
+				131661E620C57D950057C7D5 /* AboutController.swift */,
 			);
 			path = factory;
 			sourceTree = "<group>";
@@ -163,13 +203,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13031D2120C2FE040018AE84 /* S__6070346.jpeg in Resources */,
+				13031D1120C2EA7F0018AE84 /* mix.jpg in Resources */,
 				1327754120C29C6D0050AD0A /* icons8-deployment.png in Resources */,
+				1310C4FB20C38C8200169E70 /* machine.png in Resources */,
 				1327753220C1D5940050AD0A /* LaunchScreen.storyboard in Resources */,
 				1327754920C2A53E0050AD0A /* information (1).png in Resources */,
+				13031D1F20C2FCEB0018AE84 /* switch (3).png in Resources */,
 				1327753F20C2982B0050AD0A /* icons8-mixer.png in Resources */,
 				1327754520C2A0A80050AD0A /* icons8-robot.png in Resources */,
+				131661E520C579020057C7D5 /* button.png in Resources */,
 				1327752F20C1D5940050AD0A /* Assets.xcassets in Resources */,
+				13031D1520C2ED660018AE84 /* MWindyHK-Bold.otf in Resources */,
 				1327754720C2A3A40050AD0A /* check-mark (1).png in Resources */,
+				13031D1920C2F0980018AE84 /* stop (6).png in Resources */,
 				1327752D20C1D5920050AD0A /* Main.storyboard in Resources */,
 				1327754320C29F360050AD0A /* icons8-engine.png in Resources */,
 			);
@@ -189,6 +236,7 @@
 				1327752820C1D5920050AD0A /* AppDelegate.swift in Sources */,
 				1327755120C2A97D0050AD0A /* RobotController.swift in Sources */,
 				1327753C20C1DD8D0050AD0A /* MixerController.swift in Sources */,
+				131661E720C57D950057C7D5 /* AboutController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,12 @@ import UIKit
 
 class ProcessController: UIViewController {
 
+    @IBOutlet weak var web: UIWebView!
+    @IBAction func run_process(_ sender: Any) {
+        let url = URL(string: "http://192.168.1.8/machine/process")
+        let urlreq = NSURLRequest(url: url! as URL)
+        web.loadRequest(urlreq as URLRequest)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
