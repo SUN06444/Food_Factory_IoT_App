@@ -14,7 +14,7 @@ class ConveyorController: UIViewController {
     @IBOutlet weak var web2: UIWebView!
     
     @IBAction func run_conveyor(_ sender: Any) {
-        let url = URL(string: "http://192.168.1.6/conveyor/right")
+        let url = URL(string: "http://192.168.1.6/conveyor/left")
         let urlreq = NSURLRequest(url: url! as URL)
         web1.loadRequest(urlreq as URLRequest)
     }
