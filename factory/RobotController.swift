@@ -10,6 +10,18 @@ import UIKit
 
 class RobotController: UIViewController {
 
+    @IBOutlet weak var web1: UIWebView!
+    @IBOutlet weak var web2: UIWebView!
+    @IBAction func run_conveyor2(_ sender: Any) {
+        let url = URL(string: "http://192.168.1.8/conveyor/left")
+        let urlreq = NSURLRequest(url: url! as URL)
+        web1.loadRequest(urlreq as URLRequest)
+    }
+    @IBAction func stop_conveyor2(_ sender: Any) {
+        let url = URL(string: "http://192.168.1.8/electricity/off")
+        let urlreq = NSURLRequest(url: url! as URL)
+        web2.loadRequest(urlreq as URLRequest)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

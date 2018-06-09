@@ -10,6 +10,34 @@ import UIKit
 
 class TestingController: UIViewController {
 
+    @IBOutlet weak var web1: UIWebView!
+    @IBOutlet weak var web2: UIWebView!
+    @IBOutlet weak var web3: UIWebView!
+    @IBOutlet weak var web4: UIWebView!
+    
+    @IBAction func testing1(_ sender: Any) {
+        let url = URL(string: "http://192.168.1.6/conveyor/right")
+        let urlreq = NSURLRequest(url: url! as URL)
+        web1.loadRequest(urlreq as URLRequest)
+    }
+    
+    @IBAction func finish1(_ sender: Any) {
+        let url = URL(string: "http://192.168.1.6/electricity/off")
+        let urlreq = NSURLRequest(url: url! as URL)
+        web2.loadRequest(urlreq as URLRequest)
+    }
+    
+    @IBAction func testing2(_ sender: Any) {
+        let url = URL(string: "http://192.168.1.8/conveyor/right")
+        let urlreq = NSURLRequest(url: url! as URL)
+        web3.loadRequest(urlreq as URLRequest)
+    }
+    
+    @IBAction func finish2(_ sender: Any) {
+        let url = URL(string: "http://192.168.1.8/electricity/off")
+        let urlreq = NSURLRequest(url: url! as URL)
+        web4.loadRequest(urlreq as URLRequest)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
