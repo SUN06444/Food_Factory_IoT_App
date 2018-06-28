@@ -17,6 +17,9 @@
 		131661E720C57D950057C7D5 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131661E620C57D950057C7D5 /* AboutController.swift */; };
 		131AD63D20CBC92A002F883A /* approve.png in Resources */ = {isa = PBXBuildFile; fileRef = 131AD63C20CBC92A002F883A /* approve.png */; };
 		131AD63F20CBC935002F883A /* controller.png in Resources */ = {isa = PBXBuildFile; fileRef = 131AD63E20CBC934002F883A /* controller.png */; };
+		131AD64B20CBED66002F883A /* worker.png in Resources */ = {isa = PBXBuildFile; fileRef = 131AD64A20CBED65002F883A /* worker.png */; };
+		131AD64D20CBEDEF002F883A /* robot-arm.png in Resources */ = {isa = PBXBuildFile; fileRef = 131AD64C20CBEDEE002F883A /* robot-arm.png */; };
+		131AD65120CBF149002F883A /* teamwork (2).png in Resources */ = {isa = PBXBuildFile; fileRef = 131AD65020CBF148002F883A /* teamwork (2).png */; };
 		1327752820C1D5920050AD0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327752720C1D5920050AD0A /* AppDelegate.swift */; };
 		1327752A20C1D5920050AD0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327752920C1D5920050AD0A /* ViewController.swift */; };
 		1327752D20C1D5920050AD0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1327752B20C1D5920050AD0A /* Main.storyboard */; };
@@ -46,6 +49,9 @@
 		131661E620C57D950057C7D5 /* AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
 		131AD63C20CBC92A002F883A /* approve.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = approve.png; sourceTree = "<group>"; };
 		131AD63E20CBC934002F883A /* controller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = controller.png; sourceTree = "<group>"; };
+		131AD64A20CBED65002F883A /* worker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = worker.png; sourceTree = "<group>"; };
+		131AD64C20CBEDEE002F883A /* robot-arm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot-arm.png"; sourceTree = "<group>"; };
+		131AD65020CBF148002F883A /* teamwork (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "teamwork (2).png"; sourceTree = "<group>"; };
 		1327752420C1D5920050AD0A /* factory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = factory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1327752720C1D5920050AD0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1327752920C1D5920050AD0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +86,9 @@
 		13031D0F20C2EA600018AE84 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				131AD65020CBF148002F883A /* teamwork (2).png */,
+				131AD64C20CBEDEE002F883A /* robot-arm.png */,
+				131AD64A20CBED65002F883A /* worker.png */,
 				131AD63E20CBC934002F883A /* controller.png */,
 				131AD63C20CBC92A002F883A /* approve.png */,
 				131661E420C579010057C7D5 /* button.png */,
@@ -209,9 +218,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				131AD64D20CBEDEF002F883A /* robot-arm.png in Resources */,
 				13031D2120C2FE040018AE84 /* S__6070346.jpeg in Resources */,
 				13031D1120C2EA7F0018AE84 /* mix.jpg in Resources */,
 				1327754120C29C6D0050AD0A /* icons8-deployment.png in Resources */,
+				131AD65120CBF149002F883A /* teamwork (2).png in Resources */,
 				1310C4FB20C38C8200169E70 /* machine.png in Resources */,
 				1327753220C1D5940050AD0A /* LaunchScreen.storyboard in Resources */,
 				1327754920C2A53E0050AD0A /* information (1).png in Resources */,
@@ -227,6 +238,7 @@
 				13031D1920C2F0980018AE84 /* stop (6).png in Resources */,
 				1327752D20C1D5920050AD0A /* Main.storyboard in Resources */,
 				1327754320C29F360050AD0A /* icons8-engine.png in Resources */,
+				131AD64B20CBED66002F883A /* worker.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +403,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T3FDAV56VP;
 				INFOPLIST_FILE = factory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -409,6 +422,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T3FDAV56VP;
 				INFOPLIST_FILE = factory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

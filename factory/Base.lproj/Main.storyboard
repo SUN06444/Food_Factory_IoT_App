@@ -32,7 +32,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yzz-EJ-6o9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1806" y="-42"/>
+            <point key="canvasLocation" x="-2335" y="-44"/>
         </scene>
         <!--首頁-->
         <scene sceneID="fT5-ZD-OLC">
@@ -167,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9S-hf-k6Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-958" y="-41"/>
+            <point key="canvasLocation" x="-447" y="-43"/>
         </scene>
         <!--Conveyor Controller-->
         <scene sceneID="wNr-sp-ac8">
@@ -271,7 +271,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bqh-4k-Qxj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="390" y="-1155"/>
+            <point key="canvasLocation" x="153" y="-1068"/>
         </scene>
         <!--Testing Controller-->
         <scene sceneID="9qF-ED-sb4">
@@ -433,7 +433,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pb4-0U-psq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="424.80000000000001" y="695.80209895052474"/>
+            <point key="canvasLocation" x="-863" y="735"/>
         </scene>
         <!--About Controller-->
         <scene sceneID="qPz-zL-9qy">
@@ -442,13 +442,147 @@
                     <view key="view" contentMode="scaleToFill" id="3G4-wz-WZv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pXN-Cd-OpF">
+                                <rect key="frame" x="15" y="144" width="345" height="349"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6I-6o-eHo">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="70"/>
+                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="0.29449379280821919" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="蛋黃酥工廠 IoT">
+                                                <attributes>
+                                                    <font key="NSFont" size="26" name="MWindyHK-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NV1-90-pJr">
+                                        <rect key="frame" x="0.0" y="70" width="345" height="69.5"/>
+                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="0.29449379279999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="&quot;">
+                                                <attributes>
+                                                    <font key="NSFont" metaFont="system" size="19"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="蛋黃酥工廠">
+                                                <attributes>
+                                                    <font key="NSFont" size="19" name=".PingFangTC-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="APP&quot; ">
+                                                <attributes>
+                                                    <font key="NSFont" metaFont="system" size="19"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="提供原物料攪拌、半成品運輸、成品加工、禮盒包裝、機器檢測功能。">
+                                                <attributes>
+                                                    <font key="NSFont" size="19" name=".PingFangTC-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgA
+</string>
+                                                <attributes>
+                                                    <font key="NSFont" metaFont="system" size="19"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7E-oR-bed">
+                                        <rect key="frame" x="0.0" y="139.5" width="345" height="70"/>
+                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="0.29449379279999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="透過此">
+                                                <attributes>
+                                                    <font key="NSFont" size="19" name=".PingFangTC-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="APP ">
+                                                <attributes>
+                                                    <font key="NSFont" metaFont="system" size="19"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="可以模擬工廠運作，再搭配廠區生產追蹤系統(">
+                                                <attributes>
+                                                    <font key="NSFont" size="19" name=".PingFangTC-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="SFT">
+                                                <attributes>
+                                                    <font key="NSFont" metaFont="system" size="19"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=")，可達到生產透明化。">
+                                                <attributes>
+                                                    <font key="NSFont" size="19" name=".PingFangTC-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="開發團隊：2018 勤益科大資管系 專題第二組" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0u-tx-cwR">
+                                        <rect key="frame" x="0.0" y="209.5" width="345" height="69.5"/>
+                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="0.29449379279999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gCG-id-CNd">
+                                        <rect key="frame" x="0.0" y="279" width="345" height="70"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yx-o3-qvj">
+                                                <rect key="frame" x="0.0" y="0.0" width="115" height="70"/>
+                                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="0.29449379279999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" image="worker.png"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ce-F7-8kL">
+                                                <rect key="frame" x="115" y="0.0" width="115" height="70"/>
+                                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="0.29449379279999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" image="teamwork (2).png"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jR-Aq-Oua">
+                                                <rect key="frame" x="230" y="0.0" width="115" height="70"/>
+                                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="0.29449379279999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" image="robot-arm.png"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ohu-et-mq6" firstAttribute="trailing" secondItem="pXN-Cd-OpF" secondAttribute="trailing" constant="15" id="HkW-pa-TYW"/>
+                            <constraint firstItem="Ohu-et-mq6" firstAttribute="bottom" secondItem="pXN-Cd-OpF" secondAttribute="bottom" constant="130" id="NaJ-uw-nci"/>
+                            <constraint firstItem="pXN-Cd-OpF" firstAttribute="top" secondItem="Ohu-et-mq6" secondAttribute="top" constant="80" id="XlF-0j-hMZ"/>
+                            <constraint firstItem="pXN-Cd-OpF" firstAttribute="leading" secondItem="Ohu-et-mq6" secondAttribute="leading" constant="15" id="usa-7F-mm7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ohu-et-mq6"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T54-CS-q6G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-446" y="967"/>
+            <point key="canvasLocation" x="152.80000000000001" y="735.38230884557731"/>
         </scene>
         <!--Robot Controller-->
         <scene sceneID="rlY-SF-vL2">
@@ -544,7 +678,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpD-bQ-g09" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1192.8" y="161.46926536731635"/>
+            <point key="canvasLocation" x="710" y="-385"/>
         </scene>
         <!--Process Controller-->
         <scene sceneID="6Ln-kh-yeq">
@@ -622,7 +756,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FHI-Rn-gCn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1192.8" y="-569.86506746626696"/>
+            <point key="canvasLocation" x="-1318" y="-385"/>
         </scene>
         <!--Mixer Controller-->
         <scene sceneID="Wou-6m-nw3">
@@ -726,7 +860,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HZX-T6-Sbn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-385" y="-1358"/>
+            <point key="canvasLocation" x="-863" y="-1068"/>
         </scene>
     </scenes>
     <resources>
@@ -742,7 +876,10 @@
         <image name="information (1).png" width="64" height="64"/>
         <image name="machine.png" width="3262" height="2150"/>
         <image name="mix.jpg" width="748" height="516"/>
+        <image name="robot-arm.png" width="64" height="64"/>
         <image name="stop (6).png" width="128" height="128"/>
         <image name="switch (3).png" width="128" height="128"/>
+        <image name="teamwork (2).png" width="64" height="64"/>
+        <image name="worker.png" width="64" height="64"/>
     </resources>
 </document>

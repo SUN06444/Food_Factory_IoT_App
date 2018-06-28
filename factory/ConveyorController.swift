@@ -20,7 +20,7 @@ class ConveyorController: UIViewController {
     }
     
     @IBAction func stop_conveyor(_ sender: Any) {
-        let url = URL(string: "http://192.168.1.6/electricity/off")
+        let url = URL(string: "http://192.168.1.6/power/off")
         let urlreq = NSURLRequest(url: url! as URL)
         web2.loadRequest(urlreq as URLRequest)
     }

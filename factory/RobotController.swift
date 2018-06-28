@@ -18,7 +18,7 @@ class RobotController: UIViewController {
         web1.loadRequest(urlreq as URLRequest)
     }
     @IBAction func stop_conveyor2(_ sender: Any) {
-        let url = URL(string: "http://192.168.1.8/electricity/off")
+        let url = URL(string: "http://192.168.1.8/power/off")
         let urlreq = NSURLRequest(url: url! as URL)
         web2.loadRequest(urlreq as URLRequest)
     }
